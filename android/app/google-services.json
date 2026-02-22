@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "415537858341",
+    "project_id": "sde-prep-app",
+    "storage_bucket": "sde-prep-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415537858341:android:7a387d06e34cffa23abccc",
+        "android_client_info": {
+          "package_name": "com.example.sdeprep"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-y73401QK_eoNtiJ--IBwLLCdt0y1pvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
