@@ -156,12 +156,34 @@ flutter run -d chrome
 flutter run
 ```
 
-### **Firebase Setup**
+### **Firebase Setup** 🔐
 
-- Already configured in `firebase_options.dart`
-- Anonymous sign-in enabled
-- Firestore database in test mode
-- No additional setup needed!
+Firebase configuration files are **not committed** to this repo for security (no API keys exposed).
+
+**To set up Firebase for local development:**
+
+```bash
+# 1. Create a Firebase project at https://firebase.google.com
+# 2. Install FlutterFire CLI (if not already installed)
+npm install -g firebase-tools
+
+# 3. Configure Firebase for this project
+flutterfire configure --project=sde-prep-app
+
+# This auto-generates:
+# - lib/firebase_options.dart
+# - ios/Runner/GoogleService-Info.plist
+# - android/app/google-services.json
+```
+
+**Note:** These files are `.gitignore`'d for security. Each developer generates them locally.
+
+**Firebase Setup Checklist:**
+
+- ✅ Anonymous Authentication enabled
+- ✅ Firestore database in test mode
+- ✅ Real-time sync ready
+- ✅ Offline caching with SharedPreferences
 
 ---
 
